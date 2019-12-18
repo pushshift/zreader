@@ -13,7 +13,7 @@ class Zreader:
         self.buffer = ''
 
 
-    def read(self):
+    def readlines(self):
         '''Generator method that creates an iterator for each line of JSON'''
         while True:
             chunk = self.reader.read(self.chunk_size).decode()
